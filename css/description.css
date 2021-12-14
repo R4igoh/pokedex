@@ -9,8 +9,14 @@
     border-radius: .5rem;
     border: 2px solid var(--black);
     box-sizing: border-box;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 .description p {
     margin: 0;
+}
+
+.description::-webkit-scrollbar {
+    display: none;
 }
