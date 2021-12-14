@@ -22,7 +22,7 @@ async function handleSubmit(event) {
     event.preventDefault();
     $pokedex.classList.add('is-open');
     const form = new FormData($form);
-    const id = form.get('id');
+    const id = form.get('id').toLowerCase();
     activePokemon = await setPokemon(id);
 }
 
