@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+  <meta property="og:title" content="The Rock" />
+  <meta property="og:type" content="video.movie" />
+  <!-- <meta property="og:url" content="" /> -->
+  <meta property="og:image" content="./design/Pokedex.jpg" />
+  <title>Pokedex</title>
+</head>
+<body>
+  <main class="pokedex" tabindex="0" id="pokedex">
+    <section class="pokedex-main" aria-label="Información general del Pokémon">
+      <div class="header-shadow">
+        <div class="header">
+          <span class="light is-big is-sky" id="light"></span>
+          <span class="light is-red"></span>
+          <span class="light is-yellow"></span>
+          <span class="light is-green"></span>
+        </div>        
+      </div>
+      <div class="screen">
+        <div class="screen-border">
+          <div class="screen-safeArea" id="screen">
+            <img src="" alt="" id="image">
+          </div>
+          <div class="screen-bar">
+            <div class="screen-buttons">
+              <button></button>
+              <button></button>
+            </div>
+            <div class="menu-wrapper">
+              <div class="menu">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="actions">
+        <div class="variants">
+          <div class="variant-buttons">
+            <button id="randomButton" class="is-very-big is-secondary"></button>
+            <div class="slim-buttons">
+              <button class="is-slim is-strong-yellow"></button>
+              <button class="is-slim is-secondary"></button>
+            </div>
+          </div>
+        </div>
+        <form role="search" id="form" class="search">
+          <input type="text" name="id" placeholder="¿Qué Pokémon buscas?" autocomplete="off" id="input">
+        </form>
+        <div class="navigation">
+          <button id="next-pokemon" class="navigation-right" aria-label="Siguiente Pokémon"></button>
+          <button id="prev-pokemon" class="navigation-left" aria-label="Anterior Pokémon"></button>
+          <button id="next-image" class="navigation-down" aria-label="Siguiente imagen"></button>
+          <button id="prev-image" class="navigation-up" aria-label="Anterior imagen"></button>
+        </div>
+        <div class="description"><p id="description">Busca a un pokémon para obtener todas sus características</p></div>
+      </div>
+    </section>
+    
+    <div class="cover-front"></div>
+    <section class="cover-back" aria-label="Estadísticas del Pokémon">
+      <div class="stats">
+        <canvas id="stats" width="200" height="200"></canvas>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
+    <script src="./js/index.js" type="module"></script>
+  </main>
+</body>
+</html>
+
+
+
